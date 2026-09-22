@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+button {
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+    transform: scale(1.1);
+  }
+
+  20% {
+    border-radius: 25% 75% 35% 55%;
+    transform: scale(1.00);
+  }
+
+  40% {
+    border-radius: 75% 25% 70% 50%;
+    transform: scale(.9);
+  }
+
+  60% {
+    border-radius: 35% 55% 40% 80%;
+    transform: scale(.9);
+  }
+
+  80% {
+    border-radius: 70% 30% 80% 20%;
+    transform: scale(1.0);
+  }
+
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: scale(1.1);
+  }
+}
+
+.blob {
+  animation: blob 8s infinite;
+}
