@@ -1,4 +1,4 @@
-import getSongsByMood from "./moodMusic.js";
+import getSongsByMood from "../moodMusic.js";
 
 export default async function handler(req, res) {
   try {
