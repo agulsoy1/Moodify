@@ -59,7 +59,7 @@ export default function App() {
 
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:3000/api/music?mood=${mood}`);
+      const res = await fetch(`https://moodify-backend-phi.vercel.app/api/music?mood=${mood}`);
       const data = await res.json();
       setSongs(data);
       setSearchKey((prev) => prev + 1);
